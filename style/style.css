@@ -1,0 +1,94 @@
+body {
+    background-color: #1E293B; /* Dark background color */
+    color: #F3F4F6; /* Light text color */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+.container {
+    background-color: #2D3748; /* Darker container background */
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Spacing between direct children */
+    max-width: 375px; /* Maximum width of the container */
+    width: 100%; /* Take full width on smaller screens */
+    box-sizing: border-box;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    border: 2px solid #F3F4F6; /* Optional: Add a border around the avatar */
+}
+
+h1 {
+    color: #F3F4F6;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    color: #A3E479; /* Green color for location */
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    color: #F3F4F6;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+ul li {
+    background-color: #3E4C60; /* Button background color */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+ul li:hover {
+    background-color: #A3E479; /* Green hover color */
+    color: #1E293B; /* Dark text on hover */
+}
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #F3F4F6;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: #A3E479;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
